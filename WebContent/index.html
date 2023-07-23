@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>home</title>
+</head>
+<body>
+<h1>ようこそ</h1>
+<form id="form" action="/todo/Login" method="post">
+マスターID、パスワード両方数字で入力してください<br>
+マスターID：<input type="text" id = text name="master_id"><br>
+パスワード：<input type="password" id = pass name="pass"><br>
+<input type="submit" value="ログイン" onclick="check()">
+</form>
+<script type="text/javascript">
+
+function check(){
+	const str1 = document.forms.form.text.value;
+	const str2 = document.forms.form.pass.value;
+
+	var regex = /[0-9]/;
+	var result1 = regex.test(str1);
+	var result2 = regex.test(str2);
+	if(!result1 || !result2){
+		alert("もう一度入力してください");
+	}
+}
+</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 # todoList
 
 #MVCモデル/jsを使用したtoDoアプリ
-#バージョン
+##バージョン
 Java11/Tomct9/MySQL 8.0.31.CE
